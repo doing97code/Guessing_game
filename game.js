@@ -50,5 +50,5 @@ btngame.onclick=function(){
 }
 
 play.onclick=function(){
-    window.location.href='desr.html';
+    window.location.href='index.html';
 }
