@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure full viewport height */
+    width: 100vw;
+    background-color: #6f3048; /* Fallback background color */
+}
+
+.maincontainer {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 305px solid transparent;
+    border-left: 350px solid #ab667d; 
+    border-bottom: 305px solid transparent;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    z-index: 0;
+}
+
+.containergame {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin-top: 40%; */
+}
+.leftgame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 300%;
+    font-size: 25px;
+    padding: 2px 15px;
+    border: 2px solid #ffbad0;
+    border-radius: 9px;
+    z-index: 2; /* Ensure button is above the triangle */
+}
+
+#btngame {
+    padding: 9px 25px;
+    background-color: #ffbad0;
+    border: 3px solid #fc78a1;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    z-index: 2; /* Ensure button is above the triangle */
+}
+
+#play{
+    padding: 9px 25px;
+    background-color: #fc0707;
+    border: 3px solid #fc78a1;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    z-index: 2; /* Ensure button is above the triangle */ 
+}
+.rightgame{
+    z-index: 3;
+    margin-top: 8%;
+}
+
+.rightText {
+    font-size: 2.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    /* margin-top: 10px; */
+    z-index: 20; /* Ensure text is above the triangle */
+}
+
+.chance1{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .maincontainer {
+        margin-top: 50%;
+        height: auto; /* Adjust height for smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .containergame {
+        margin-top: 30%;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .triangle-right {
+        top: auto; /* Reset top position */
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 292.5px solid transparent;
+        border-left: 375px solid #ab667d;
+        border-bottom: 292.5px solid transparent;
+        margin-top: 30%; /* Add margin to position triangle */
+    }
+
+    input {
+        width: 180%; /* Adjust input width */
+        font-size: 29px; /* Adjust font size */
+    }
+
+    #btngame {
+        font-size: 20px; /* Adjust font size */
+        padding: 7px 20px; /* Adjust padding */
+    }
+
+    .rightText {
+        font-size: 2.1rem; /* Adjust font size */
+        margin-top: 20px; /* Add margin to separate elements */
+    }
+}
+
+@media (min-width: 500px) and (max-width: 650px) {
+    .maincontainer {
+        margin-top: 10%;
+        height: 400px; 
+    }
+
+    .containergame {
+        margin-top: 100%;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .triangle-right {
+        top: auto; /* Reset top position */
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 400px solid transparent;
+        border-left: 550px solid #ab667d;
+        border-bottom: 400px solid transparent;
+        margin-top: 100%; /* Add margin to position triangle */
+    }
+
+    input {
+        /* width: 50%; */
+       font-size: 1.9rem;
+    }
+
+    #btngame {
+        font-size: 1.9rem;
+        font-weight: 800;
+        padding: 8px 22px; /* Adjust padding */
+    }
+
+    .rightText {
+        font-size: 2.8rem; /* Adjust font size */
+        margin-top: 20px; /* Add margin to separate elements */
+    }
+}
+
+@media (min-width: 650px) and (max-width: 800px) {
+    .maincontainer {
+        margin-top: 10%;
+        height: 400px; 
+    }
+
+    .containergame {
+        margin-top: 100%;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .triangle-right {
+        top: auto; /* Reset top position */
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 400px solid transparent;
+        border-left: 550px solid #ab667d;
+        border-bottom: 400px solid transparent;
+        margin-top: 100%; /* Add margin to position triangle */
+    }
+
+    input {
+        /* width: 50%; */
+       font-size: 1.9rem;
+    }
+
+    #btngame {
+        font-size: 1.9rem;
+        font-weight: 800;
+        padding: 8px 22px; /* Adjust padding */
+    }
+
+    .rightText {
+        font-size: 2.8rem; /* Adjust font size */
+        margin-top: 20px; /* Add margin to separate elements */
+    }
+}
+
+@media (min-width: 800)  {
+    .maincontainer {
+        margin-top: 50%;
+        height: 500px; 
+    }
+
+    .containergame {
+        margin-top: 100%;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .triangle-right {
+        top: auto; /* Reset top position */
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 400px solid transparent;
+        border-left: 550px solid #ab667d;
+        border-bottom: 400px solid transparent;
+        margin-top: 100%; /* Add margin to position triangle */
+    }
+
+    input {
+        /* width: 50%; */
+       font-size: 1.9rem;
+    }
+
+    #btngame {
+        font-size: 1.9rem;
+        font-weight: 800;
+        padding: 8px 22px; /* Adjust padding */
+    }
+
+    .rightText {
+        font-size: 2.8rem; /* Adjust font size */
+        margin-top: 20px; /* Add margin to separate elements */
+    }
+}
